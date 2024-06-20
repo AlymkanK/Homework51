@@ -1,2 +1,0 @@
-class CatsDb:
-    cats = []
