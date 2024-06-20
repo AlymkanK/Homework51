@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
+<body>
+    <h1>Create Cat</h1>
+    <form action="/add/" method="post">
+    {% csrf_token %}
+    <label>Имя:</label><br/>
+    <input type="text" name="name"/><br/>
+    <label>Вoзраст:</label><br/>
+    <input type="number" value = '1' name="age"/><br/>
+    <br/>
+     <label>Уровень сытости: :</label><br/>
+    <input type="number" value = '40' name="hunger_level"/><br/>
+    <br/>
+    <label>Уровень счастья:</label><br/>
+    <input type="number" value = '40' name="happiness_level"/><br/>
+    <br/>
+     <form action="send" target="/cat_stats">
+    <button>Отправить</button>
+    </form>
+</form>
+</body>
+</html>
